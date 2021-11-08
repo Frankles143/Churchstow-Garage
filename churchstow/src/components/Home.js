@@ -1,14 +1,14 @@
 import React from 'react';
 import { Divider, Grid, makeStyles, Typography } from '@material-ui/core';
 
-import Tools from '../images/GarageTools.jpg'
+import Mechanic from '../images/Mechanic.jpg'
 
 const useStyles = makeStyles(theme => ({
 
     title: {
         marginTop: "1.5rem",
         marginBottom: "0.5rem",
-        color: "#3f51b5",
+        color: "#800020",
         fontWeight: "600",
     },
     subtitle: {
@@ -52,12 +52,12 @@ export const Home = () => {
                 Everything from tyres to brakes,<br /> whatever you need from your local, trustworthy garage!
             </Typography>
 
-            <img src={Tools} className={classes.homeImage} alt="Tools neatly hanging up on a wall" />
+            <img src={Mechanic} className={classes.homeImage} alt="Mechanic looking at an engine" />
 
             <Divider />
             <br />
 
-            <Typography variant="h6" style={{ color: "#3f51b5" }}>
+            <Typography variant="h6" style={{ color: "#800020" }}>
                 Contact us
             </Typography>
             <br />
@@ -65,7 +65,8 @@ export const Home = () => {
             {/* Embedded Google map */}
             <div className={classes.map}>
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2548.6878949650563!2d-3.807195684108035!3d50.29775360623641!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486ce0973f2af8c7%3A0x880ccfed8b105e3e!2sChurchstow%20MOT%20Centre!5e0!3m2!1sen!2suk!4v1620744585333!5m2!1sen!2suk"
+                    title="Map to the garage"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d267.89786791807506!2d-3.805046645047311!3d50.29774408676491!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTDCsDE3JzUxLjkiTiAzwrA0OCcxOC42Ilc!5e0!3m2!1sen!2suk!4v1636112137032!5m2!1sen!2suk"
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}
@@ -79,14 +80,14 @@ export const Home = () => {
                         Contact
                     </Typography>
 
-                    01752 123456
+                    01548 464001
                 </Grid>
                 <Grid item xs={12} lg={4}>
                     <Typography variant="h6">
                         Address
                     </Typography>
 
-                    Unit 4c, <br />
+                    Unit 4D, <br />
                     South Hams Business Park,<br />
                     Churchstow, <br />
                     Kingsbridge <br />
