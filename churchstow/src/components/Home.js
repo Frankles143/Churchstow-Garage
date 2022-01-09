@@ -1,7 +1,10 @@
 import React from 'react';
 import { Divider, Grid, makeStyles, Typography } from '@material-ui/core';
 
-import Mechanic from '../images/Mechanic.jpg'
+// import Mechanic from '../images/Mechanic.jpg'
+import Engine from '../images/Engine2.jpg'
+import BobOne from '../images/Bob1.png'
+import BobTwo from '../images/Bob2.png'
 
 const useStyles = makeStyles(theme => ({
 
@@ -34,7 +37,26 @@ const useStyles = makeStyles(theme => ({
         [theme.breakpoints.up('xl')]: {
             height: "600px"
         },
-
+    },
+    bobContainer: {
+        display: "flex",
+        flexDirection: "row",
+        flexWrap: "nowrap",
+        justifyContent: "center",
+        alignItems: "center",
+        marginTop: "1rem",
+        marginBottom: "1rem",
+    },
+    bob: {
+        [theme.breakpoints.up('xs')]: {
+            height: "200px"
+        },
+        [theme.breakpoints.up('md')]: {
+            height: "400px"
+        },
+        [theme.breakpoints.up('xl')]: {
+            height: "600px"
+        },
     }
 
 }))
@@ -49,10 +71,10 @@ export const Home = () => {
                 Churchstow Garage
             </Typography>
             <Typography variant="subtitle1" className={classes.subtitle}>
-                Everything from tyres to brakes,<br /> whatever you need from your local, trustworthy garage!
+                Everything from MOTS/services to repairs,<br /> whatever you need from your local, trustworthy garage!
             </Typography>
 
-            <img src={Mechanic} className={classes.homeImage} alt="Mechanic looking at an engine" />
+            <img src={Engine} className={classes.homeImage} alt="Mechanic looking at an engine" />
 
             <Divider />
             <br />
@@ -73,6 +95,11 @@ export const Home = () => {
                     allowfullscreen=""
                     loading="lazy"></iframe>
             </div>
+
+            <Grid container className={classes.bobContainer}>
+                <img src={BobOne} className={classes.bob} style={{marginRight: "-2px"}} alt="Owner Bob with a car"/>
+                <img src={BobTwo} className={classes.bob} alt="The garage sign that reads Churchstow Garage Limited"/>
+            </Grid>
 
             <Grid container className={classes.contact}>
                 <Grid item xs={12} lg={4}>
